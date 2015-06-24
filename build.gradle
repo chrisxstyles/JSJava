@@ -8,7 +8,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'com.github.johnrengelman.shadow'
 
-version = '0.1'
+version = '0.2'
 
 if (!JavaVersion.current().java8Compatible) {
     throw new IllegalStateException('''A Haiku:
@@ -25,10 +25,10 @@ repositories {
 }
 
 dependencies {
-    compile 'io.vertx:vertx-core:3.0.0-milestone4'
-    compile 'com.tinkerpop:tinkerpop:3.0.0.M7'
-    compile 'com.tinkerpop:tinkergraph-gremlin:3.0.0.M7'
-    compile 'io.vertx:vertx-lang-js:3.0.0-milestone4'
+    compile 'io.vertx:vertx-core:3.0.0'
+    compile 'org.apache.tinkerpop:tinkerpop:3.0.0.M9-incubating'
+    compile 'org.apache.tinkerpop:tinkergraph-gremlin:3.0.0.M9-incubating'
+    compile 'io.vertx:vertx-lang-js:3.0.0'
 }
 
 shadowJar {

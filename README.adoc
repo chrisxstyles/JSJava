@@ -1,3 +1,10 @@
+This requires that you have 'js-yaml' installed in your ~/node_modules
+
+This example shows how it is possiable to unite the Java and Javascript ecosystems in a single project, even a single process!
+
+We load and run a completly alien Java class, and execute one of its methods in javascript(nashorn), and we load an NPM module and execute it on the JVM(nashorn)!
+
+
 = Vert.x 3.0 Simplest Gradle project
 
 This project shows a very simple hello world Vert.x 3.0 project using Gradle, which has a simple HTTP server which
